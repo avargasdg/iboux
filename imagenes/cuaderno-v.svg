@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209.51 271.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6adec;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #e6e6e6;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g>
+      <rect class="cls-2" x="-24.38" y="24.52" width="258.42" height="209.37" rx="12" ry="12" transform="translate(234.04 24.38) rotate(90)"/>
+      <path class="cls-1" d="M0,257.34V2.3C0,1.37,1.79.73,3.98.88l180.06,12.4c5.38.43,5.38,5.28,5.38,6.21l-1.41,246.44c0,4.22-4.19,5.93-6.38,5.77L3.98,259.3C1.79,259.15,0,258.27,0,257.34Z"/>
+    </g>
+  </g>
+</svg>
