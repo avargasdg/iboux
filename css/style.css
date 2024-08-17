@@ -1,17 +1,3 @@
-@font-face {
-  font-family: 'Apple Color Emoji';
-  src: local('Apple Color Emoji'), local('AppleColorEmoji'), local('apple-color-emoji');
-  src:
-    url('fonts/AppleColorEmoji.woff2') format('woff2'),
-    url('fonts/AppleColorEmoji.woff') format('woff'),
-    url('fonts/AppleColorEmoji.ttf') format('truetype'),
-    url('fonts/AppleColorEmoji.eot?'),
-    url('fonts/AppleColorEmoji.eot?#iefix') format('embedded-opentype'),
-    url('fonts/AppleColorEmoji.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root {
   --azul: #44ccff;
   --rosa: #e6adec;
@@ -26,10 +12,6 @@
 
 .urbanist{
   font-family: 'Urbanist';
-}
-
-.emoji{
-  font-family: 'Apple Color Emoji';
 }
 
 .btn-new, body a, .navbar, .slick-arrow{
