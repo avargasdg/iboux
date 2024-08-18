@@ -589,8 +589,13 @@ footer .btn-new, .navbar .btn-new{
 }
 
 /*Start now*/
+
+.cal-m{
+  margin-bottom: -30px;
+}
+
 .fondo-calendario {
-  background-image: url(../imagenes/calendario-2.png);
+  background-image: none;
   background-color: var(--rosa);
   background-size: contain;
   background-position: top center;
@@ -1024,15 +1029,17 @@ option:hover {
 
 /*Start now*/
 .fondo-calendario {
-  background-image: url('../imagenes/calendario.png');
-  background-size: 80% 97%;
-  background-position: top left 30%;
-  background-color: transparent;
+  background-color: transparent; 
 }
 
 .fondo-calendario .inner iframe{
-  height: 670px;
-  width: 100%;
+  height: 695px;
+  max-width: 1000px;
+  background-image: url(../imagenes/calendario.png);
+  background-size: 100% 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 18px;
 }
 
 .fondo-calendario .inner .calendly-inline{
