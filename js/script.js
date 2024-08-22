@@ -40,8 +40,10 @@ function doScroll(){
   });
 
   $('#final').click(function() {
+    $('#login').hide();
     $('#seccion-form').hide();
-    $('#seccion-price').show();
+    $('#seccion-01').show();
+    $('#seccion-03').show();
   });
   
 $('.carousel-profesores').slick({
@@ -55,16 +57,16 @@ $('.carousel-profesores').slick({
   nextArrow: '<button type="button" class="slick-arrow slick-next"></button>',
   responsive: [
     {
-      breakpoint: 920,
+      breakpoint: 992,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 1440,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     }
@@ -79,6 +81,15 @@ $('.carousel-features').slick({
   autoplay: false,
   arrows: false,
   responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      }
+    },
     {
       breakpoint: 480,
       settings: {

@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400..700;1,400..700&family=Urbanist:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body class="body-login"> 
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container-xxl">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+    <div class="container-fluid p-2 ps-lg-4 pe-lg-4">
           <a class="navbar-brand" href="index.html"><img src="imagenes/logo.svg" height="40px" width="auto" alt=""></a>
           <button class="navbar-toggler x-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
           <div class="collapse navbar-collapse text-center text-md-start" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-md-2">
               <li class="nav-item px-2 px-md-2">
-                <a class="nav-link" aria-current="page" href="price.html">Price</a>
+                <a class="nav-link" aria-current="page" href="price.html">Prices</a>
               </li>
               <li class="nav-item px-2 px-md-2">
                 <a class="nav-link" href="co-ops_&_schools.html">Co-Ops & Schools</a>
@@ -82,45 +82,40 @@
       </div>
     </div>
 
-    <footer class="container-fluid text-dark pt-5 pt-md-5">
-      <div class="row pt-5">
-        <div class="col-12 col-md-2"></div>
-        <div class="col-12 col-md-8">
-          <div class="container-xxl p-3">
-            <div class="row">
-              <div class="col-12 col-md-4 px-0 text-center text-md-start">
-                <img src="imagenes/logo-full.svg" class="mx-auto d-block logo-footer">
-                <div class="ps-2 ps-md-2 pt-2 pt-md-2 my-3 my-md-3">
-                  <button type="button" class="btn btn-new btn-nav fondo-verde d-block  mx-auto">Book a free trial lesson now <span class="emoji">&#9889;</span></button>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 mt-4 mt-md-0 px-5 text-center text-md-start">
-                <p><a href="#" class="nav-link">STUDENT SUPPORT<br>
-                (for current students)</a></p>
-                <p><a href="#" class="nav-link">CONTACT US<br>
-                  (for general inquiries)</a></p>
-              </div>
-              <div class="col-12 col-md-4 mt-4 mt-md-0 mb-5 mb-md-0 text-center text-md-start">
-                <p><a href="#" class="nav-link">REAL STUDENT REVIEWS</a></p>
-                <p><a href="#" class="nav-link">TERMS & CONDITIONS</a></p>
-                <p><a href="#" class="nav-link">PRIVACY POLICY</a></p>
-              </div>
-            </div>
+    <footer class="container-fluid text-dark">
+      <div class="container-xxl p-3 pt-5">
+        <div class="row">
+          <div class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-start align-items-md-start">
+            <img src="imagenes/logo-full.svg" class="logo-footer m-0 mb-4">
+              <button type="button" class="btn btn-new btn-nav fondo-verde">Book a free trial lesson now
+                <span class="emoji">&#9889;</span></button>
+          </div>
+          <div class="col-12 col-md-4 mt-4 mt-md-0 pe-md-4 d-flex flex-column align-items-center justify-content-start align-items-md-end">
+            <button type="button" class="btn btn-new btn-nav fondo-rosa d-block fondo-blanco">STUDENT SUPPORT <span
+                class="emoji">&#127384;</span><br><span style="font-size: 0.7em;">(for current students)</span> </button>
+          </div>
+          <div class="col-12 col-md-3 mt-4 mt-md-0 mb-5 mb-md-0 ps-md-4 text-center text-md-start border-md-start border-dark">
+            <p><a href="#" class="nav-link">REAL STUDENT REVIEWS</a></p>
+            <p><a href="#" class="nav-link">CONTACT US<br></a></p>
+            <p><a href="#" class="nav-link">TERMS & CONDITIONS</a></p>
+            <p><a href="#" class="nav-link">PRIVACY POLICY</a></p>
           </div>
         </div>
-        <div class="col-12 col-md-2"></div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <p class="text-center copyright">Iboux Acadèmie (C) 2024. All rights reserved.</p>
+        <div class="row">
+          <div class="col-12 p-3">
+            <p class="copyright text-center text-md-start">© 2024 Iboux Education SL</p>
+          </div>
         </div>
       </div>
+  
     </footer>
     <div id="cookies" class="container-fluid text-center bg-light fixed-bottom">
       <div class="row">
         <div class="col-12 pt-4 pt-md-4">
-          <p class="cookies fs-6">This website uses cookies to improve your experiece. <a href="#" class="under">Learn more.</a> 
-            <button id="btn-cookies" class="btn btn-new mx-5 px-5 mx-md-3 my-4 my-md-0 d-inline">Accept</button></p>
+          <p class="cookies">This website uses cookies to improve your experience. <a href="#" class="under">Learn
+              more</a>
+            <button id="btn-cookies" class="btn btn-new mx-5 px-5 mx-md-3 my-4 my-md-0 d-block d-md-inline mx-auto">Accept</button>
+          </p>
         </div>
       </div>
     </div>

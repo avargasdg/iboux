@@ -43,7 +43,7 @@ h1, h2, h3 , h4, h5, h6, .title, .btn-new, .nav-link, .destacado{
 }
 
 h1, h2{
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 h3{
@@ -51,12 +51,12 @@ h3{
 }
 
 h4{
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 400;
 }
 
 h5{
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 p{
@@ -82,7 +82,7 @@ p{
 .nav-link{
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 1em;
+  font-size: 0.8em;
   color: var(--negro);
   font-weight: 800;
 }
@@ -113,13 +113,9 @@ p{
 }
 
 .btn-new:hover{
-  background-color: var(--blanco);
+  background-color: var(--blanco) !important;
   color: var(--negro);
   border: var(--borde);
-}
-
-.btn-nav{
-  font-size: 0.8em;
 }
 
 a:hover, .nav-link:hover, .nav-link.active{
@@ -133,6 +129,7 @@ footer{
   background-repeat: no-repeat;
   background-position: right -5% bottom 20%;
   background-color: var(--azul);
+  padding: 60px 10px 80px;
 }
 
 
@@ -150,22 +147,24 @@ footer .nav-link:hover{
   color: var(--blanco);
 }
 
-footer .btn-new, .navbar .btn-new{
-  font-size: 1em;
-}
-
 .fondo-img{
   background-size: 90%;
 }
 
 .logo-footer{
-  max-width: 180px;
+  max-width: 320px;
   height: auto;
   margin: auto;
 }
 
 .copyright, .cookies, .cookies .btn-new{
   font-size: 0.9em;
+}
+
+.cookies a{
+  color: var(--negro);
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 
@@ -335,7 +334,7 @@ footer .btn-new, .navbar .btn-new{
   font-size: 1.7em;
 }
 #seccion-4 p{
-  font-size: 1.4rem;
+  font-size: 1.2em;
 }
 
 #seccion-4 img{
@@ -369,19 +368,19 @@ footer .btn-new, .navbar .btn-new{
 
 #seccion-01 .list-price-1, #seccion-02 .list-price-2 {
   background: linear-gradient(180deg, var(--transparente) 15%, var(--azul) 15%, var(--azul) 85%, var(--transparente) 85%);
-  z-index: -1;
+  z-index: 1;
 }
 
 #seccion-02 .list-price-2, body.body-login #seccion-01 .list-price-2{
   background: linear-gradient(180deg, var(--transparente) 15%, var(--rosa) 15%, var(--rosa) 85%, var(--transparente) 85%);
-  z-index: -1;
+  z-index: 1;
 }
 
 .list-price-1 div.text-center, .list-price-2 div.text-center {
   border: 2px solid var(--negro);
   background-color: var(--blanco);
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .list-price-1 div.text-center button.fondo-rosa, .list-price-2 div.text-center button.fondo-rosa {
@@ -417,7 +416,7 @@ footer .btn-new, .navbar .btn-new{
 #seccion-03 {
   margin-top: -10%;
   position: relative;
-  z-index: -2;
+  z-index: 0;
   overflow-x: hidden;
 }
 
@@ -617,14 +616,16 @@ footer .btn-new, .navbar .btn-new{
   background-size: cover;
   background-position: top center;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .lineas-verdes .sec-1{
   background-color: var(--blanco);
   border: 2px solid #000;
   position: relative;
-  z-index: -1;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
 }
 
 /*Login*/
@@ -718,7 +719,52 @@ option:hover {
   background-color: var(--azul);
 }
 
-@media screen and (min-width: 767px) {
+@media only screen and (min-width : 767px) and (max-width : 991px) {
+/*-- HOME --*/
+.cuaderno{
+  background-image: url('../imagenes/cuaderno.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top -10px right -50%;
+  padding: 20px 0 0;
+}
+
+#seccion-2 {
+  background-image: url('../imagenes/recuadro.svg');
+  background-position: center top;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.vaso-1 {
+  background-image: url(../imagenes/vaso-1.svg);
+  background-position: top right 2%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+}
+
+.vaso-2 {
+  background-image: url(../imagenes/vaso-2.svg);
+  background-position: top left 2%;
+  background-size: 30%;
+  background-repeat: no-repeat;
+}
+footer{
+  background-image: url('../imagenes/avion.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 20%;
+  padding: 60px 10px 200px;
+}
+#seccion-03 .fondo-cuaderno {
+  background-size: 100%;
+  background-position: top left -1%;
+}
+#seccion-03 .fondo-img {
+  background-position: center;
+}
+}
+
+@media screen and (min-width: 992px) {
 
   body {
     font-size: 16px;
@@ -760,6 +806,7 @@ option:hover {
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: left 0 bottom 20%;
+    padding: 60px 10px 200px;
   }
   
   a:hover, .nav-link:hover, .nav-link.active{
@@ -767,28 +814,24 @@ option:hover {
     color: var(--azul);
   }
   
-  footer .btn-new, .navbar .btn-new{
-    font-size: 0.7em;
-  }
-  
   h1, h2{
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
   
   h3{
-    font-size: 1.5em;
+    font-size: 2em;
   }
   
   h4{
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   
   h5{
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
   
   p{
-    font-size: 1em;
+    font-size: 1.1em;
   }
   
   .btn-new{
@@ -796,7 +839,10 @@ option:hover {
     padding: 10px 12px;
     letter-spacing: 1.7px;
   }
-  
+
+  .border-md-start{
+    border-left: var(--borde);
+  }
   
   /*-- HOME --*/
   .cuaderno{
@@ -832,7 +878,7 @@ option:hover {
   }
   
   #seccion-2 h2, #seccion-2 h4{
-      max-width: 800px;
+      max-width: 1280px;
       margin: auto;
     }
   
@@ -862,9 +908,15 @@ option:hover {
   #seccion-2 .card:nth-child(3){
     margin-left: -10px;
   }
+
+  #seccion-3 {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   #seccion-3 .card {
-    min-height: 420px;
+    min-height: 570px;
     background-image: url(../imagenes/celular.png);
     background-position: top center;
     background-size: 95% 100%;
@@ -915,7 +967,6 @@ option:hover {
   #seccion-03 .fondo-cuaderno {
     background-size: 51% 101%;
     background-position: top left -1%;
-    z-index: -1;
   }
 
   #seccion-03 div.fondo-img{
@@ -955,7 +1006,7 @@ option:hover {
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
     position: relative;
 }
 
@@ -1034,10 +1085,10 @@ option:hover {
 
 .fondo-calendario .inner iframe{
   height: 695px;
-  max-width: 1000px;
+  max-width: 1080px;
   background-image: url(../imagenes/calendario.png);
-  background-size: 100% 100%;
-  background-position: top center;
+  background-size: 90% 95%;
+    background-position: 20% 50%;
   background-repeat: no-repeat;
   padding-top: 18px;
 }
