@@ -123,6 +123,14 @@ a:hover, .nav-link:hover, .nav-link.active{
   color: var(--blanco);
 }
 
+a .btn-new{
+  text-decoration: none;
+}
+
+.container-xxl{
+  max-width: 1440px;
+}
+
 footer{
   background-image: url('../imagenes/avion.svg');
   background-size: 300%;
@@ -157,7 +165,11 @@ footer .nav-link:hover{
   margin: auto;
 }
 
-.copyright, .cookies, .cookies .btn-new{
+.copyright{
+  font-size: 0.8em;
+}
+
+.cookies, .cookies .btn-new{
   font-size: 0.9em;
 }
 
@@ -188,9 +200,12 @@ footer .nav-link:hover{
 
 .destacado{
   color: var(--negro);
-  text-decoration: underline;
   font-size: 1.2em;
+  text-decoration: none;
+  font-weight: 700;
 }
+
+
 
 .fondo-img {
   background-image: url(../imagenes/fondo-img.svg);
@@ -529,6 +544,12 @@ footer .nav-link:hover{
   padding: 7% 6.4% 3.4% 6%;
 }
 
+.fotos .slick-slide{
+  padding: 10px;
+  background-color: var(--blanco);
+  border: var(--borde);
+}
+
 .level{
   border: 2px solid #000;
   font-size: 2.5rem;
@@ -735,6 +756,7 @@ option:hover {
   background-size: 70%;
   background-repeat: no-repeat;
 }
+
 .vaso-1 {
   background-image: url(../imagenes/vaso-1.svg);
   background-position: top right 2%;
@@ -771,7 +793,7 @@ footer{
     background-image: url(../imagenes/linea-body.svg);
     background-size: 94%;
     background-repeat: no-repeat;
-    background-position: top 0% left 0%;
+    background-position: top 10% right -20%;
   }
 
   body.body-login {
@@ -876,7 +898,11 @@ footer{
   .carousel-features  div  p  span{
     font-size: 1.8em;
   }
-  
+
+  #seccion-1 h1{
+    max-width: 70%;
+  }
+
   #seccion-2 h2, #seccion-2 h4{
       max-width: 1280px;
       margin: auto;
@@ -893,7 +919,7 @@ footer{
   #seccion-2 {
       background-image: url('../imagenes/recuadro.svg');
       background-position: center bottom;
-      background-size: 90%;
+      background-size: 85%;
       background-repeat: no-repeat;
     }
   
